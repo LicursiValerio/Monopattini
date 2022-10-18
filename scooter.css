@@ -1,0 +1,105 @@
+/* Selezione sfondo e adattamento scala dell'intero contenuto */
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  width: 1200px;
+  height: 800px;
+  margin: auto;
+  margin-top: 3%;
+}
+
+/* Creazione della parte in rilievo definendo: dimensioni, colore, forma
+Ho scelto id perché è unico e non ne potrebbero servire altri uguali*/
+#rilievo{
+  width: 1200px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3%;
+}
+
+/* Forma e centratura del logo. Ho scelto un id e non una class
+in quanto il logo è unico */
+#logo{
+  width: 250px;
+  height: auto;
+  margin-left: 475px;
+  margin-top: 100px;
+}
+
+/* Colore e forma del titolo */
+header > h1{
+  color: rgb(0,255,0);
+  text-align: center;
+}
+
+/* Nella gerarchia delle informazioni ho scelto di inserire prima
+"nav e main" insieme e poi ciascuno separate in quanto contiene
+informazioni utili a tutto ciò che segue dopo */
+nav, main{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* Creazione della barra di navigazione */
+nav{
+  background-color: rgb(0, 255, 0);
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dettagli sugli elementi presenti nella barra di navigazione */
+nav > input{
+  margin-left: 5px;
+}
+
+/* Dettagli sulla separazione delle sezioni */
+main>section{
+  margin-top: 10px;
+}
+/* Caratteristiche dei nomi utente. Ho usato una class perché è
+una dicitura che si presenta più volte */
+.utente{
+  display: inline-block;
+  color: white;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+/* Caratteristiche della distanza del monopattino. Ho usato una class perché è
+una dicitura che si presenta più volte */
+.distanza{
+  color: white;
+  font-size: 20px;
+  margin: 2px;
+}
+
+/* Caratteristiche della dicitura stato carica. Ho usato una class perché è
+una dicitura che si presenta più volte */
+.carica{
+  color: white;
+}
+
+/* Barre di stato carica. Ho scelto di usare un id e non una class
+in quanto ogni barra è unica nonostante siano relativamente simili */
+#stato1{
+  background-color: rgb(230,238,159);
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#stato2{
+  background-color: rgb(50,255,50);
+  width: 500px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#stato3{
+  background-color: rgb(255,50,50);
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+}
